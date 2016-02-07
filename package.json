@@ -1,0 +1,25 @@
+{
+  "name": "angular2-webclient",
+  "version": "1.0.0",
+  "description": "Webclient SPA app with Angular2 and TypeScript",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jordan Ilchev",
+  "license": "ISC",
+  "devDependencies": {
+    "jspm": "^0.16.27"
+  },
+  "jspm": {
+    "dependencies": {
+      "angular2": "npm:angular2@^2.0.0-beta.3",
+      "es6-shim": "github:es-shims/es6-shim@^0.34.2",
+      "reflect-metadata": "npm:reflect-metadata@^0.1.3",
+      "zone.js": "npm:zone.js@^0.5.13"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.2"
+    }
+  }
+}
