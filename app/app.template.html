@@ -1,0 +1,16 @@
+<h1>My First Angular 2 App</h1>
+
+<p>
+    <tp-button icon="exchange" (click)="b1click(textProp)">{{textProp}}</tp-button>
+</p>
+
+<tp-input type="text" required
+          data-value-update="input"
+          label="Input title"
+          hint="Example: Input example text"
+          validationMessage="Field is required"
+          [(value)]="textProp"></tp-input>
+
+<input #inBox [(value)]="textProp" (keyup)="textProp=inBox.value">
+
+<p>{{textProp}}</p>

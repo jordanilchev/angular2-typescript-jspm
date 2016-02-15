@@ -2,6 +2,12 @@ import {Component} from 'angular2/core';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    templateUrl: 'app/app.template.html'
 })
-export class AppComponent { }
+export class AppComponent {
+    public textProp = "hello";
+    public b1click(a) {
+        alert(a);
+    }
+
+}
