@@ -1,5 +1,5 @@
 System.config({
-  baseURL: "/",
+  //baseURL: "/",
   defaultJSExtensions: true,
   transpiler: "typescript",
   paths: {
@@ -10,6 +10,7 @@ System.config({
   map: {
     "angular2": "npm:angular2@2.0.0-beta.6",
     "es6-shim": "github:es-shims/es6-shim@0.34.4",
+    "lodash": "npm:lodash@4.4.0",
     "reflect-metadata": "npm:reflect-metadata@0.1.3",
     "typescript": "npm:typescript@1.8.0",
     "zone.js": "npm:zone.js@0.5.14",
@@ -207,6 +208,10 @@ System.config({
     },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "npm:lodash@4.4.0": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:miller-rabin@4.0.0": {
       "bn.js": "npm:bn.js@4.10.3",

@@ -9,8 +9,8 @@
           label="Input title"
           hint="Example: Input example text"
           validationMessage="Field is required"
-          [(value)]="textProp"></tp-input>
+          [value]="textProp"></tp-input>
 
-<input #inBox [(value)]="textProp" (keyup)="textProp=inBox.value">
+<input [(ngModel)]="textProp" />
 
 <p>{{textProp}}</p>
